@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mood-Based-Todo-List </title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Mood-Based-Todo-List</h1>
+
+        <div class="mood-selector">
+            <label for="mood">Select Mood :</label>
+           <select name="mood" id="mood" onchange="changeMood()">
+            <option value="happy">Happy 😊</option>
+            <option value="calm">Calm 🌿</option>
+            <option value="productive">Productive 🚀</option>
+            <option value="sad">Sad 😢</option>
+           </select>
+        </div>
+
+        <p id="quote">Let's have a great day ! </p>
+
+        <div class="task-input">
+            <input type="text" id="task-input" placeholder="What's on your mind today?">
+            <button onclick="addTask()">Add Task</button>
+        </div>
+
+        <ul id="Tasklist"></ul>
+    </div>
+
+
+    
+</body>
+</html>
+
+
+
+
+
+
+
